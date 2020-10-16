@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 public extension Publisher {
     /// Attaches a subscriber with closure-based behavior only for the completion
     ///

@@ -17,7 +17,7 @@ import SwiftUI
 ///   - value: optional value to verify
 ///   - then: callback to create a view with the value is not nil
 /// - Returns: The built view
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 @inlinable public func ifLet<T, ThenOut: View>(_ value: T?, then: (T) -> ThenOut) -> some View {
     ViewBuilder.buildIf(value.map { then($0) })
 }
@@ -35,7 +35,7 @@ import SwiftUI
 ///   - then: callback to create a view with the value is not nil
 ///   - else: callback to create a view with the value is nil
 /// - Returns: The built view
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 @inlinable public func ifLet<T, ThenOut: View, ElseOut: View>(
     _ value: T?,
     then: (T) -> ThenOut,
@@ -55,7 +55,7 @@ import SwiftUI
 ///   - empty: condition to check if string is valid when is empty.
 ///   - then: callback to create a view with the value is not nil
 /// - Returns: The built view
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 @inlinable public func ifLet<T, ThenOut: View>(
     _ value: T?,
     empty: Bool = false,
@@ -79,7 +79,7 @@ import SwiftUI
 ///   - then: callback to create a view with the value is not nil
 ///   - else: callback to create a view with the value is nil
 /// - Returns: The built view
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 @inlinable public func ifLet<T, ThenOut: View, ElseOut: View>(
     _ value: T?,
     empty: Bool = false,

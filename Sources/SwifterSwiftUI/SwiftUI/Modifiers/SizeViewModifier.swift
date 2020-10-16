@@ -13,7 +13,7 @@ import SwiftUI
 ///
 ///     myView.modifier(SizeViewModifier(size: $size))
 ///
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 14.0, OSX 10.15, tvOS 14.0, watchOS 6.0, *)
 public struct SizeViewModifier: ViewModifier {
     @Binding private(set) var size: CGSize
 

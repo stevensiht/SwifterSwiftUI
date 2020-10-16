@@ -52,7 +52,6 @@
 		OBJ_118 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* IfLet.swift */; };
 		OBJ_119 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* View+Extensions.swift */; };
 		OBJ_126 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_137 /* Color+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Color+ExtensionsTests.swift */; };
 		OBJ_138 /* Image+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Image+ExtensionsTests.swift */; };
 		OBJ_139 /* LinearGradient+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* LinearGradient+ExtensionsTests.swift */; };
 		OBJ_140 /* IfLetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* IfLetTests.swift */; };
@@ -190,7 +189,6 @@
 		OBJ_11 /* LinearGradient+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* IfLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLet.swift; sourceTree = "<group>"; };
 		OBJ_14 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_18 /* Color+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		OBJ_19 /* Image+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		OBJ_20 /* LinearGradient+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		OBJ_22 /* IfLetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetTests.swift; sourceTree = "<group>"; };
@@ -264,9 +262,9 @@
 		OBJ_93 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/93sauu/repositories/SwifterSwiftUI/.build/checkouts/ViewInspector/Package.swift; sourceTree = "<group>"; };
 		OBJ_98 /* Combine */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Combine; sourceTree = SOURCE_ROOT; };
 		OBJ_99 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
-		"SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwifterSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwifterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"ViewInspector::ViewInspector::Product" /* ViewInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ViewInspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwifterSwiftUI::SwifterSwiftUI::Product" /* SwifterSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwifterSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SwifterSwiftUI::SwifterSwiftUITests::Product" /* SwifterSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwifterSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ViewInspector::ViewInspector::Product" /* ViewInspector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewInspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,7 +314,6 @@
 				9C75D079245D96B0009BB447 /* Helpers */,
 				9CBD867024937AF100022EDC /* Modifiers */,
 				OBJ_21 /* Utils */,
-				OBJ_18 /* Color+ExtensionsTests.swift */,
 				OBJ_19 /* Image+ExtensionsTests.swift */,
 				OBJ_20 /* LinearGradient+ExtensionsTests.swift */,
 				OBJ_23 /* View+ExtensionsTests.swift */,
@@ -799,7 +796,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_137 /* Color+ExtensionsTests.swift in Sources */,
 				9C4FBE82246BEC120020886F /* UserDefaultEnum.swift in Sources */,
 				OBJ_138 /* Image+ExtensionsTests.swift in Sources */,
 				9C4FBE7E246B28B50020886F /* UserDefaultTests.swift in Sources */,
@@ -931,7 +927,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/SwifterSwiftUI_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
@@ -944,7 +940,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwifterSwiftUI;
-				TVOS_DEPLOYMENT_TARGET = 13.0;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
@@ -959,7 +955,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/SwifterSwiftUI_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
@@ -972,7 +968,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwifterSwiftUI;
-				TVOS_DEPLOYMENT_TARGET = 13.0;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
@@ -1018,7 +1014,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/SwifterSwiftUITests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
@@ -1027,7 +1023,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwifterSwiftUITests;
-				TVOS_DEPLOYMENT_TARGET = 13.0;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
@@ -1043,7 +1039,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/SwifterSwiftUITests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
@@ -1052,7 +1048,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SwifterSwiftUITests;
-				TVOS_DEPLOYMENT_TARGET = 13.0;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
@@ -1067,7 +1063,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/ViewInspector_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
@@ -1080,7 +1076,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = ViewInspector;
-				TVOS_DEPLOYMENT_TARGET = 13.0;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -1095,7 +1091,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwifterSwiftUI.xcodeproj/ViewInspector_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
@@ -1108,7 +1104,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = ViewInspector;
-				TVOS_DEPLOYMENT_TARGET = 13.0;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
